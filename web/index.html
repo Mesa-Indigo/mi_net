@@ -1,28 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mock Browser</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div id="app" class="browser">
-        <div class="browser-bar">
-            <button @click="toggleTheme">{{ isDarkMode ? 'Light Mode' : 'Dark Mode' }}</button>
-            <button @click="loadPage('home')">Home</button>
-            <select v-model="currentPage" @change="loadPage(currentPage)">
-                <option value="home">Select Page</option>
-                <option value="home">Home</option>
-                <option value="news">News</option>
-                <option value="social">Social</option>
-            </select>
-        </div>
-        <div class="content">
-            <component :is="currentPageComponent"></component>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mi_net system</title>
+  </head>
+  <body class="overflow-hidden">
+    <div id="minet_frame">
+        <div id="charselect"></div>
+        <div id="network"></div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-    <script src="app.js"></script>
-</body>
+    <script type="module" src="../web/app.js"></script>
+  </body>
 </html>
