@@ -1,10 +1,14 @@
 
 return {
 
-    ['zone_1'] = {
-        label = "net_ls: lseoul",
+    ['zone_pd1'] = {
         access = {
-            public = true,
+            label = "pd_net: missionrowpd",
+            groups = { 'lspd' }
+        },
+        location = {
+            coords = vec3(0,0,0),
+            address = "Sinner St & Vespucci Blvd"
         }
     }
 
