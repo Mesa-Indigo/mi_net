@@ -1,31 +1,42 @@
+
+-- game / build information
 use_experimental_fxv2_oal 'yes'
-fx_version 'cerulean'
-lua54 'yes'
-game 'gta5'
+fx_version 'cerulean' lua54 'yes' game 'gta5'
 
-name 'mi_lib'
-author 'Mesa-Indigo'
+-- resource information
+repository 'https://github.com/Agimir/mi_tmp'
+description 'template script for mesa indigo resources'
+author 'Agimir'
+name 'mi_tmp'
 version '0.0.0'
-repository 'https://github.com/Mesa-Indigo/mi_lib'
-description 'Library resource for external HTML scripts'
+license 'LGPL-3.0-or-later'
 
-files {
-    'source/**/*.lua',
-}
-
-ui_page 'web/dist/index.html'
-
+-- shared files
 shared_scripts {
-    '@ox_lib/init.lua',
     'source/shared/*.lua',
-    'init.lua',
+    'data/*.lua',
+    'source/init.lua',
 }
 
+-- client files
 client_scripts {
-    'source/client/*.lua',
+    'bridge/client/*.lua',
+    'source/client/*.lua'
 }
 
+-- server files
 server_scripts {
-    '@oxmysql/lib/MySQL.lua',
-    'source/server/*.lua',
+    'bridge/server/*.lua',
+    'source/server/*.lua'
+}
+
+ui_page 'web/source/index.html'
+
+-- resource files
+files {
+    'source/init.lua',
+    'web/source/index.html',
+    'web/**/*',
+    'web/**/**diagnostic/*',
+    'locales/*.json'
 }

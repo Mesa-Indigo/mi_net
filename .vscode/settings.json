@@ -2,8 +2,6 @@
     "Lua.diagnostics.globals": [
         "lib",
         "locale",
-        "Ox",
-        "Target",
-        "OxPlayer"
+        "Ox"
     ]
 }
