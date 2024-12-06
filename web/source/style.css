@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0
+}
+  
+/* Body styling */
+body {
+    background-color: none;
+    overflow: hidden;
+}
+
+#main-container {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu_info {
+    background-color: lightgrey;
+    width: 30vw; height: 30vh;
+    margin: auto;
+}
+
+.city_info {
+    background-color: rgb(85, 114, 175);
+    width: 30vw; height: 30vh;
+    margin: left;
+}
+
+.plyr_info {
+    background-color: rgb(156, 65, 65);
+    width: 30vw; height: 30vh;
+    margin: auto;
+}
