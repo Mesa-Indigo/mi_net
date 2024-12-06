@@ -15,20 +15,3 @@ body {
     height: 100vh;
 }
 
-.menu_info {
-    background-color: lightgrey;
-    width: 30vw; height: 30vh;
-    margin: auto;
-}
-
-.city_info {
-    background-color: rgb(85, 114, 175);
-    width: 30vw; height: 30vh;
-    margin: left;
-}
-
-.plyr_info {
-    background-color: rgb(156, 65, 65);
-    width: 30vw; height: 30vh;
-    margin: auto;
-}
