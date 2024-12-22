@@ -8,7 +8,7 @@ return {
         label = "minet.lsco.south.port",
         signal = { min = 3, max = 6 },
         ports = {
-            model = "",
+            model = "tr_prop_tr_fp_scanner_01a",
             spawn = {
                 vec4(0,0,0,0),
                 vec4(0,0,0,0),

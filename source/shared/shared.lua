@@ -17,6 +17,29 @@ IGDate = function()
     } return i
 end
 
+-- minet address creation
+GenerateMINetAddress = function()
+    -- Generate three random uppercase letters for the front
+    local letters = ""
+    for i = 1, 3 do
+        letters = letters .. string.char(math.random(65, 90)) -- ASCII values for 'A' to 'Z'
+    end
+
+    -- Generate random numbers for the remaining octets
+    local octet1 = math.random(0, 255)
+    local octet2 = math.random(0, 255)
+    local octet3 = math.random(0, 255)
+
+    -- Concatenate them into a string with the letters at the front
+    return string.format("%s.%d.%d.%d", letters, octet1, octet2, octet3)
+end
+
+-- Seed the random number generator for better randomness
+math.randomseed(os.time())
+
+-- Test the function
+print(GenerateMINetAddress())
+
 --------------------------------
 ----    Helpful Links   ----
 -- https://www.w3schools.com/colors/colors_picker.asp For HTML Colors
