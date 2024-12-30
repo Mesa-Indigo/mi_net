@@ -18,10 +18,11 @@ Dedicated to creating free FiveM resources with quality and trashy goodness. Fro
 ![GitHub](https://img.shields.io/github/license/Mesa-Indigo/mi_net)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/Mesa-Indigo/mi_net?color=%23FF9A00)
 
-Network system with accesspoints, html interactive tool, character selection, and more.
+Library script for all Mesa Indigo Resources
 
 ### Features:
-- In progress
+- Exports
+- Bridges
 
 ### Dependancies:
 - N/A
