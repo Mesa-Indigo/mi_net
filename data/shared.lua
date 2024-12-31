@@ -5,9 +5,14 @@ Locale = 'en'
 -- debug options
 Debug = true
 
+-- framework options | ox_core
+-- more options will be added over time
+System = 'ox_core'
+
 
 -- global options
 
+-- taxes for purchasing items from shops
 Shared.Taxes = {
     -- account to send taxes to
     account = 'XXXXXXXXXXXX',
