@@ -45,8 +45,13 @@ local convertNameString = function(first, last)
     return initials
 end
 
-GenerateMINetUserID = function(initials, conversion)
-    local userid = initials .. conversion
+GenerateMINetUserID = function(date, first, last)
+    local userid = ""
+    local id_date = convertDateString(date)
+    local id_name = convertNameString(first, last)
+    if id_date and id_name then
+        userid = id_date .. id_name
+    end
     return userid
 end
 
